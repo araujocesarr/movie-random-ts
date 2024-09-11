@@ -1,0 +1,67 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #4441fad8;
+  top: var(--swiper-navigation-top-offset, 340px);
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  --tw-scale-x: 1.35;
+  --tw-scale-y: 1.35;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition: all 0.3s ease;
+}
+.swiper-button-next::after {
+  font-size: 32px;
+}
+
+.swiper-button-prev::after {
+  font-size: 32px;
+}
+
+.swiper-button-next {
+  right: var(--swiper-navigation-sides-offset, 2px);
+}
+
+.swiper-button-prev {
+  left: var(--swiper-navigation-sides-offset, 2px);
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: static;
+  bottom: 8px;
+  z-index: 999;
+}
+
+.swiper-pagination-bullet-active {
+  color: #4441fad8;
+  --tw-scale-x: 1.35;
+  --tw-scale-y: 1.35;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition: all 0.3s ease;
+}
+.swiper-pagination-bullet:hover {
+  background: #0a06ffd8;
+  --tw-scale-x: 1.2;
+  --tw-scale-y: 1.2;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition: all 0.3s ease;
+}
