@@ -1,12 +1,5 @@
 import React from "react";
-
-interface HeaderProps {
-  title: string;
-  color: string;
-
-  author: string;
-  authorLink: string;
-}
+import { HeaderProps } from "../types";
 
 export const Header: React.FC<HeaderProps> = ({
   title,

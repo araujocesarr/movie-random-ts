@@ -34,3 +34,10 @@ interface SwiperComponentProps {
   onLoadComplete: () => void;
   reloadTrigger: number;
 }
+
+interface HeaderProps {
+  title: string;
+  color: string;
+  author: string;
+  authorLink: string;
+}
